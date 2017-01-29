@@ -1,6 +1,6 @@
 name: check_snds
 description: "file:///README.md"
-url: "https://github.com/janvonde/check-snds"
+url: "https://github.com/janvonde/check_snds"
 tags: snds
 vendor: Linux
 target: Operating System,Mail
