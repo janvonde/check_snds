@@ -8,11 +8,11 @@ type: Plugin
 license: gplv3
 releases: 
   - 
-    name: 1.0
-    description: "1.0 Release"
+    name: 1.1
+    description: "1.1 Release"
     files: 
       - 
         name: check_snds.sh
         url: "file:///check_snds.sh"
-        description: "initial release"
-        checksum: 0ec413ba1dff6e490ddf9fe47d320de6
+        description: "adds perfdata"
+        checksum: 18e0fdfd24e7003e12a0b290d46b8055

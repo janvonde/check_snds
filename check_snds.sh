@@ -42,8 +42,8 @@ SNDSFILE=$(curl -s https://postmaster.live.com/snds/ipStatus.aspx?key="${KEY}")
 ## check if IP is included in SNDSFILE
 if [[ ${SNDSFILE} =~ .*$IP.* ]]; then
 	CAUSE=$(echo "${SNDSFILE}" | grep "${IP}" | cut -d, -f4)
-	echo "ERROR: IP ${IP} is blacklisted +++ ${CAUSE}"
+	echo "ERROR: IP ${IP} is blacklisted +++ ${CAUSE} | blacklist=1"
 	exit 2
 else
-	echo "OK: IP ${IP} is not blacklisted on SNDS"
+	echo "OK: IP ${IP} is not blacklisted on SNDS | blacklist=0"
 fi
