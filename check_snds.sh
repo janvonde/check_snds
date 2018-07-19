@@ -36,7 +36,7 @@ type -P sed &>/dev/null || { echo "ERROR: sed is required but seems not to be in
 
 
 ## get ipStatus from SNDS
-SNDSFILE=$(curl -s https://postmaster.live.com/snds/ipStatus.aspx?key="${KEY}")
+SNDSFILE=$(curl -s https://sendersupport.olc.protection.outlook.com/snds/ipStatus.aspx?key="${KEY}")
 
 
 ## check if IP is included in SNDSFILE
